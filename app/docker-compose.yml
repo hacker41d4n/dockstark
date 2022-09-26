@@ -6,13 +6,17 @@ services:
     container_name: portainer
     image: portainer/portainer-ce:latest
 
+    security_opt:
+      - no-new-privileges:true
+
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portainer-data:/data
+
     ports:
       - 8000:8000/tcp
       - 9000:9000/tcp
-
-    environment:
-      -v /var/run/docker.sock:/var/run/docker.sock \
-      -v portainer_data:data
 
     restart: unless-stopped
 
