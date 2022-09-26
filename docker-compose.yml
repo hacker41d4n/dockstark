@@ -37,7 +37,7 @@ services:
       - './etc-pihole:/etc/pihole'
       - './etc-dnsmasq.d:/etc/dnsmasq.d'
     environment:
-      TZ:"Africa/Johannesburg"
+      - TZ:"Africa/Johannesburg"
     ports:
       - "53:53/tcp"
       - "53:53/udp"
