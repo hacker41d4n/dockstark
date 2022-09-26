@@ -6,5 +6,5 @@ sudo apt install docker-compose -y
 
 
 ## Containers install
-cd app/ && sudo docker-compose up
+cd app/ && sudo docker-compose up -d
 
