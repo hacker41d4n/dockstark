@@ -1,0 +1,12 @@
+version: "2.1"
+
+services:
+
+  portainer:
+    image: portainer/portainer-ce:alpine
+    container_name: portainer
+    volumes:
+      - /home/wannock/appdata/portainer:/config
+    ports:
+      - 9000:9000
+    restart: unless-stopped
