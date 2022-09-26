@@ -7,10 +7,10 @@ services:
     image: pihole/pihole:latest
     
     ports:
-      - "53:53/tcp"
-      - "53:53/udp"
-      - "67:67/udp"
-      - "80:80/tcp"
+      - 53:53/tcp
+      - 53:53/udp
+      - 67:67/udp
+      - 80:80/tcp
 
     environment:
       TZ: 'Africa/Johannesburg'
@@ -38,7 +38,7 @@ services:
       - PGID=1000
       - TZ=Africa/Johannesburg
       - SERVERPORT=51820
-      - PEERS=1 #optional
+      - PEERS=5
       - PEERDNS=1.1.1.1
       - ALLOWEDIPS=0.0.0.0/0 #Peer addresses allowed
       - INTERNAL_SUBNET=10.244.20.0/24 #Subnet used in VPN tunnel
