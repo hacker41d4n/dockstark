@@ -55,7 +55,7 @@ services:
       - PEERDNS=1.1.1.1
       - ALLOWEDIPS=0.0.0.0/0 #Peer addresses allowed
       - INTERNAL_SUBNET=10.244.20.0/24 #Subnet used in VPN tunnel
-      - SERVERURL=10.70.1.234 #Wireguard VPN server address
+      - SERVERURL=10.70.1.251 #Wireguard VPN server address
 
     volumes:
       - /opt/wireguard-server/config:/config
