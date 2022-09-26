@@ -18,8 +18,8 @@ echo \
 
 sudo apt-get update
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-
+sudo apt-get install docker.io -y 
+sudo apt-get install docker-compose -y 
 sudo service docker start
 
 sudo service docker status
