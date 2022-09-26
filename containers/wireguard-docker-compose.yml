@@ -1,0 +1,15 @@
+version: "2.1"
+
+services:
+
+  wireguard:
+    image: linuxserver/wireguard
+    conainer_name: wireguard
+    volumes:
+      - /home/wannock/appdata/wireguar:/config
+    environment:
+      
+    ports:
+      - 51820:51820/udp
+    restart: unless-stopped
+    
