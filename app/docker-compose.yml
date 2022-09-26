@@ -5,24 +5,22 @@ services:
   pihole:
     container_name: pihole
     image: pihole/pihole:latest
-    
     ports:
-      - 54:53/tcp
-      - 55:53/udp
-      - 67:67/udp
-      - 80:80/tcp
-
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "80:80/tcp"
+      - "443:443/tcp"
     environment:
-      TZ: 'Africa/Johannesburg'
-      WEBPASSWORD: 'password'
-
+      TZ: 'Africa/Johannesburg' #this is the time zone
     volumes:
-      - './etc-pihole:/etc/pihole'
-      - './etc-dnsmasq.d:/etc/dnsmasq.d'    
-
+       - './etc-pihole/:/etc/pihole/'
+       - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+    dns:
+      - 127.0.0.1
+      - 1.1.1.1
     cap_add:
       - NET_ADMIN
-
     restart: unless-stopped
 
   wireguard:
