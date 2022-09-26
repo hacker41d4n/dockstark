@@ -7,5 +7,5 @@ sudo apt install docker-compose -y
 
 cd app/
 
-sudo docker-compose up
+sudo docker-compose -f app/docker-compose.yml up
 
