@@ -7,8 +7,8 @@ services:
     image: portainer/portainer-ce:latest
 
     ports:
-      - 8000:8000
-      - 9000:9000
+      - 8000:8000/tcp
+      - 9000:9000/tcp
 
     environment:
       -v /var/run/docker.sock:/var/run/docker.sock \
