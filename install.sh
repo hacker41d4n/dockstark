@@ -22,10 +22,7 @@ sudo apt-get install docker.io -y
 sudo apt-get install docker-compose -y 
 sudo service docker start
 
-sudo service docker status
-
-
 ## dockstark compose
 
-docker-compose up -d 
+sudo docker-compose up -d 
 
