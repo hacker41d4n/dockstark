@@ -77,7 +77,7 @@ Goto http://ipaddress/admin/
 ## Portainer:
 
 Portainer is a Kubernetes management platform that also works with Docker/Swarm and Nomad. Easily deploy, configure and secure your container environments.
-<img src="https://spng.pngfind.com/pngs/s/537-5378357_portainer-io-logo-hd-png-download.png" alt="portainer"/>
+<img src="https://www.clipartmax.com/png/middle/259-2595398_portainer-para-gestionar-tus-contenedores-en-docker-container-crane.png" alt="portainer"/>
 
 ## Portainer Ports:
 
