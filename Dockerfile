@@ -1,4 +1,3 @@
-FROM ubuntu:latest
+FROM buildpack-deps:bullseye
 RUN install.sh
-WORKDIR /app
-
+WORKDIR /dockstark
