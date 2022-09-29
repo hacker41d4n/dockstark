@@ -87,8 +87,20 @@ Portainer is a Kubernetes management platform that also works with Docker/Swarm 
 
 ## Wireguard:
 
+WireGuard is a communication protocol and free and open-source software that implements encrypted virtual private networks, and was designed with the goals of ease of use, high speed performance, and low attack surface.
+
 ## Wireguard Ports:
+
+```
+52180
+```
 
 ## Yacht:
 
+A container management UI with a focus on templates and 1-click deployments.
+
 ## Yacht Ports:
+
+```
+8000
+```
