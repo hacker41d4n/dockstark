@@ -57,6 +57,7 @@ Port 443
 ## Pi-hole:
 
 Pi-hole is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network.
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Pi-hole_Logo.png" alt="poodle" width="200"/>
 
 ## Pi-hole Ports:
