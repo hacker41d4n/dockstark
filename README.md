@@ -11,6 +11,9 @@ a Docker compose script that installs all my docker containers
 [dockstark installs:](#dockstark-installs:)
  - [Heimdall1:](#Heimdall1)
     - [Heimdall1 Ports](#heimdall-ports)
+ - [Heimdall2:](#heimdall2)
+    - [Heimdall2 Ports](#heimdall-ports-1)
+
 
 
 
