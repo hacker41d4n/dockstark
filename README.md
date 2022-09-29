@@ -6,6 +6,20 @@ a Docker compose script that installs all my docker containers
  - git
 
 
+## Table of Contents:
+
+[dockstark installs:](#dockstark-installs:)
+ - [Heimdall1:](#Heimdall1)
+    - [Heimdall1 Ports](#heimdall-ports)
+
+
+
+
+
+
+
+
+
 ## dockstark installs:
 
 ## Heimdall1:
