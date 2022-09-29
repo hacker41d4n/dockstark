@@ -1,4 +1,4 @@
-# dockstark
+# dockstark:
 a Docker compose script that installs all my docker containers 
 
 
@@ -16,13 +16,12 @@ a Docker compose script that installs all my docker containers
  - [Pi-hole](#pi-hole)
     - [Pi-hole Ports](#pi-hole-ports)
     - [Access Pi-hole](#access-pi-hole)
-
-
-
-
-
-
-
+ - [Portainer](#portainer)
+    - [Portainer Ports](#portainer-ports)
+ - [Wireguard](#wireguard)
+    -[Wireguard Ports](#wireguard-ports)
+ - [Yacht](#yacht)
+    -[Yacht Ports](#yacht-ports)
 
 
 ## dockstark installs:
@@ -57,9 +56,9 @@ Port 443
 
 ## Pi-hole:
 
-```
+
 Pi-hole is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network.
-```
+
 
 ## Pi-hole Ports:
 
@@ -75,3 +74,21 @@ Port 80
 ```
 Goto http://ipaddress/admin/
 ```
+
+## Portainer:
+
+Portainer is a Kubernetes management platform that also works with Docker/Swarm and Nomad. Easily deploy, configure and secure your container environments.
+
+## Portainer Ports:
+
+```
+9000
+```
+
+## Wireguard:
+
+## Wireguard Ports:
+
+## Yacht:
+
+## Yacht Ports:
