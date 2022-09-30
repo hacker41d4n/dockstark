@@ -1,3 +1,4 @@
 FROM buildpack-deps:bullseye
-RUN compose/docker-compose up -d 
-WORKDIR /dockstark
+RUN cd compose/
+RUN docker-compose up -d
+WORKDIR /
