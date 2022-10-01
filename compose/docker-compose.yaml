@@ -64,11 +64,28 @@ services:
   wireguard:
     image: linuxserver/wireguard
     container_name: wireguard
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Johannesburg
+      - SERVERPORT=51820 #optional
+      - PEERS=15 #optional
+      - PEERDNS=auto 1.1.1.1
+      - ALLOWEDIPS=0.0.0.0/0 #Peer addresses allowed
+      - INTERNAL_SUBNET=10.244.20.0/24 #Subnet used in VPN tunnel
+      - SERVERURL=10.70.1.251 #Wireguard VPN server address
     volumes:
-      - /home/wannock/appdata/wireguard:/config
+      - /home/wannock/appdata/wireguard-server/config:/config
+      - /usr/src:/usr/src # location of kernel headers
+      - /lib/modules:/lib/modules
     ports:
       - 51820:51820/udp
-    restart: unless-stopped
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: always
 
   yacht:
     image: selfhostedpro/yacht
